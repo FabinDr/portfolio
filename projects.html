@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu--link" href="index.html"><img src="./assests/icons/home.svg"
+                    alt="icone home">Home</a>
+            <a class="header__menu--link" href="skills.html"><img src="./assests/icons/award.svg"
+                    alt="icone Habilidades">Habilidades</a>
+            <a class="header__menu--link" href="projects.html"><img src="./assests/icons/projects.svg"
+                    alt="icone projetos">Projetos</a>
+        </nav>
+
+        <nav class="menuMobile invisible">
+            <ul class="menu__list--mobile">
+                <li class="menu__list--mobile--itens"> <a class="header__menu--link" href="index.html"><img
+                            src="./assests/icons/home.svg" alt="icone home">Home</a>
+                </li>
+                <li class="menu__list--mobile--itens"><a class="header__menu--link" href="skills.html"><img
+                            src="./assests/icons/award.svg" alt="icone Habilidades">Habilidades</a></li>
+                <li class="menu__list--mobile--itens"><a class="header__menu--link" href="projects.html"><img
+                            src="./assests/icons/projects.svg" alt="icone projetos">Projetos</a></li>
+            </ul>
+        </nav>
+
+        <button class="button__menu"><img src="assests/icons/menuMobile.svg" alt="icone menu"></button>
+    </header>
+    <main class="apresentacao-projects">
+        <h1 class="apresentacao__conteudo__titulo position">Meus <span class="titulo-destaque">projetos</span></h1>
+        <p class="apresentacao__conteudo__texto">Compartilho aqui alguns frutos de minha jornada no<strong
+                class="texto-destaque"> Programa Trilhas -
+                Inova Maranhão</strong>. Em cada projeto, tive a oportunidade de colocar em prática as habilidades
+            adquiridas ao
+            longo do programa. Destaco o segundo desafio, no qual tive a oportunidade de criar minha primeira página
+            web, um formulário de inscrição, utilizando <strong class="texto-destaque">HTML e CSS</strong>. No terceiro
+            desafio, este portfólio, aprofundei-me
+            ainda mais, utilizando <strong class="texto-destaque">HTML, CSS e JavaScript</strong> para tornar minha
+            página interativa e dinâmica. Além disso,
+            explorei o design responsivo, garantindo uma experiência consistente em diferentes dispositivos.</p>
+
+        <div class="img-projects">
+            <img src="./assests/img/pongGame.jpg" alt="pongGame">
+            <img src="./assests/img/desafioTrilhas02.jpg" alt="desafioTrilhas02">
+            <img src="./assests/img/desafioTrilhas03.jpg" alt="desafioTrilhas03">
+        </div>
+        <div class="apresentacao__links">
+            <h2 class="apresentacao__links__subtitulo">
+                Para visualizar estes e outros projetos, visite meu GitHub:</h2>
+            <a class="apresentacao__links__navegacao" href="https://github.com/FabinDr" target="_blank">
+                <img src="./assests/icons/github.png">
+                GitHub
+            </a>
+    </main>
+    <footer class="rodape">
+        <img src="./assests/img/logoAluraInclude.png">
+        <p>Desenvolvido por Fabio Duarte.</p>
+    </footer>
+
+    <script src="js/menuMobile.js"></script>
+</body>
+
+</html>

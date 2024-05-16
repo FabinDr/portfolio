@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor--primaria: #000000;
+  --cor--secundaria: #f6f6f6;
+  --cor--terciaria: #22d4fd;
+  --cor--quartenaria: #09214d;
+  --cor--quinaria: #b9b9b9;
+  --cor--hover: #272727;
+
+  --fonte--primaria: "Krona One", sans-serif;
+  --fonte--secundaria: "Montserrat", sans-serif;
+  --fonte--terciaria: "Do Hyeon", sans-serif;
+  --fonte--quartenaria: "Lato", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor--primaria);
+  color: var(--cor--secundaria);
+}
+
+.header {
+  padding: 2% 0% 0% 5%;
+  position: relative;
+}
+
+.header__menu {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header__menu--link {
+  display: flex;
+  font-family: var(--fonte--secundaria);
+  font-size: 150%;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--cor--terciaria);
+  text-decoration: none;
+  position: relative;
+}
+
+.header__menu--link::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: var(--cor--terciaria);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  transform: translateY(0.25rem);
+}
+.header__menu--link:hover::after {
+  width: 100%;
+}
+.header__menu--link img {
+  width: 2rem;
+  height: 24px;
+  padding: 2.72px 4.25px 1px 2.25px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.apresentacao {
+  padding: 5% 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.apresentacao__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  font-family: var(--fonte--terciaria);
+  font-weight: 400;
+}
+
+.titulo-destaque {
+  color: var(--cor--terciaria);
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 1.5rem;
+  font-family: var(--fonte--secundaria);
+  font-weight: 500;
+}
+.texto-destaque {
+  color: var(--cor--terciaria);
+}
+.link__texto {
+  text-decoration: none;
+}
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.apresentacao__links__subtitulo {
+  font-family: var(--fonte--primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: 2px solid var(--cor--terciaria);
+  width: 65%;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor--secundaria);
+  font-family: var(--fonte--secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+  background-color: var(--cor--hover);
+  transform: translate(-2px, -2px);
+}
+.apresentacao__imagem {
+  /* width: 40%;*/
+  /* height: 100vh;
+  gap: 0px;
+  border-radius: 16px;
+  width: 31.25rem; */
+  width: 468px;
+  height: 562px;
+  border-radius: 1rem;
+}
+.apresentacao__imagem--skills {
+  width: 40%;
+  top: 243px;
+  left: 912px;
+  gap: 0px;
+  opacity: 0px;
+}
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cor--secundaria);
+  background-color: var(--cor--quartenaria);
+  padding: 20px;
+  text-align: center;
+  font-family: var(--fonte--secundara);
+  font-size: 100%;
+  font-weight: 500;
+  color: var(--cor--quinaria);
+}
+.rodape p {
+  padding: 1% 0% 0% 0%;
+}
+.rodape img {
+  width: 8%;
+}
+@media (max-width: 1200px) {
+  .cabecalho {
+    padding: 10%;
+  }
+  .cabecalho__menu {
+    justify-content: center;
+    width: auto;
+    gap: 9%;
+    font-size: 60%;
+  }
+  .cabecalho__menu img {
+    width: 16px;
+    height: 16px;
+  }
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .apresentacao__conteudo {
+    width: auto;
+  }
+  .apresentacao__imagem {
+    width: 320px;
+    height: 361.97px;
+    top: 119px;
+    left: 20px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+  }
+  .apresentacao__imagem--skills {
+    width: 320px;
+    height: 361.97px;
+    top: 119px;
+    left: 20px;
+    gap: 0px;
+    border-radius: 16px;
+    opacity: 0px;
+    padding: 18% 0% 0% 0%;
+  }
+  .rodape p {
+    padding: 5%;
+    font-size: 80%;
+  }
+  .rodape img {
+    width: 36%;
+  }
+}

@@ -1,0 +1,42 @@
+.apresentacao__imagem--skills {
+  width: 40%;
+  top: 243px;
+  left: 912px;
+  gap: 0px;
+  opacity: 0px;
+}
+.apresentacao--skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0 2% 8%;
+  width: 1245px;
+  height: 530px;
+  top: 243px;
+  left: 172px;
+  gap: 0px;
+  opacity: 0px;
+}
+.apresentacao__conteudo--skills {
+  width: 50%;
+  height: 530px;
+  top: 243px;
+  left: 172px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.apresentacao__conteudo__texto--skills {
+  width: 540px;
+  height: 251px;
+  top: 88px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}

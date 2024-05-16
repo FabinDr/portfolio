@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu--link" href="index.html"><img src="./assests/icons/home.svg"
+                    alt="icone home">Home</a>
+            <a class="header__menu--link" href="skills.html"><img src="./assests/icons/award.svg"
+                    alt="icone Habilidades">Habilidades</a>
+            <a class="header__menu--link" href="projects.html"><img src="./assests/icons/projects.svg"
+                    alt="icone projetos">Projetos</a>
+        </nav>
+
+        <nav class="menuMobile invisible">
+            <ul class="menu__list--mobile">
+                <li class="menu__list--mobile--itens"> <a class="header__menu--link" href="index.html"><img
+                            src="./assests/icons/home.svg" alt="icone home">Home</a>
+                </li>
+                <li class="menu__list--mobile--itens"><a class="header__menu--link" href="skills.html"><img
+                            src="./assests/icons/award.svg" alt="icone Habilidades">Habilidades</a></li>
+                <li class="menu__list--mobile--itens"><a class="header__menu--link" href="projects.html"><img
+                            src="./assests/icons/projects.svg" alt="icone projetos">Projetos</a></li>
+            </ul>
+        </nav>
+
+        <button class="button__menu"><img src="assests/icons/menuMobile.svg" alt="icone menu"></button>
+
+
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Fabio<span class="titulo-destaque"> Duarte
+                </span></h1>
+            <p class="apresentacao__conteudo__texto">Olá! Me chamo Fabio! Sou desenvolvedor
+                Back-end e discente do curso de Ciência e Tecnologia na Universidade Federal do Maranhão. Atualmente,
+                sou bolsista do <a class="link__texto" href="https://www.inova.ma.gov.br/" target="_blank"><strong
+                        class="texto-destaque">Programa Trilhas - Inova Maranhão</strong></a> e este é o meu portfólio,
+                onde compartilho projetos e experiências que venho desenvolvendo ao longo da minha jornada acadêmica e
+                profissional.
+            </p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/FabinDr" target="_blank">
+                    <img src="./assests/icons/github.png">
+                    GitHub
+                </a>
+                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/fabioduarte-ic/"
+                    target="_blank">
+                    <img src="./assests/icons/linkedin.png">
+                    Likendlin
+                </a>
+                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/fabin.ic/" target="_blank">
+                    <img src="./assests/icons/instagram.png">
+                    instagram
+                </a>
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="./assests//img/imgHome.jpg" alt="programando">
+    </main>
+    <footer class="rodape">
+        <img class="img-rodape" src="./assests/img/logoAluraInclude.png">
+        <p>Desenvolvido por Fabio Duarte.</p>
+    </footer>
+
+    <script src="js/menuMobile.js"></script>
+</body>
+
+</html>
